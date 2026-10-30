@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Sistem Tata Surya - Materi IPAS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
+  font-style: normal;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://img.magnific.com/foto-premium/planet-planet-tata-surya-ilustrasi-dengan-latar-belakang-luar-angkasa-dengan-bintang-bintang-klip-seni-planetarium_687490-1422.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: 0.30; 
+            z-index: -1; 
+        }
+        
+        header {
+            background-color: #1f2833;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #45a29e;
+        }
+
+        header h1 {
+            color: #66fcf1;
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header p {
+            color: #c5c6c7;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 900px; 
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 14px;
+            background-color: rgba(240, 240, 243, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(40, 33, 33, 0.6);
+        }
+
+        
+        .planet-card {
+            background-color: #1f2833;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #66fcf1;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .planet-card:hover {
+            transform: scale(120%);
+            border-left-color: #45a29e;
+        }
+
+        
+        .planet-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            flex-shrink: 0;
+        }
+
+        .planet-info h3 {
+            margin-top: 0;
+            color: #66fcf1;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .planet-info p {
+            margin: 0;
+        }
+
+
+        .planet-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .planet-grid .planet-card {
+            height: 100%;
+            margin-bottom: 0;
+            box-sizing: border-box;
+        }
+        
+
+        .section-title {
+            text-align: center;
+            color: #ff9800;
+            margin: 50px 0 20px 0;
+            font-size: 2em;
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.4);
+        }
+
+        .benda-langit {
+            background-color: #1f2833;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-left: 6px solid #e5a213;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benda-langit:hover {
+            transform: scale(120%);
+            border-left-color: #febd27;
+        }
+
+        
+        @media (max-width: 600px) {
+            .planet-grid {
+                grid-template-columns: 1fr;
+            }
+            .planet-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #05044f;
+            margin-top: 50px;
+            font-size: 11px;
+            color: #fefcfc;
+            border-top: 1px solid #45a29e;
+        }
+        .planet-card p {
+            color: white;
+        }
+        
+        .benda-langit p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PENJELAJAH LUAR ANGKASA!</h1>
+        <p>Mengenal Sistem Tata Surya - IPAS Kelas 6 SD/MI</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>Halo, adik-adik penjelajah! Tahukah kamu kalau Bumi yang kita pijak ini berada di sebuah keluarga besar di luar angkasa? Keluarga ini dipimpin oleh sebuah bintang terang bernama Matahari. Yuk, kita lihat bentuk asli anggota <strong>Sistem Tata Surya</strong>!</p>
+        </div>
+
+        <div class="planet-card">
+            <img src="https://cdn.pixabay.com/photo/2012/01/09/09/10/sun-11582_640.jpg" alt="Matahari" class="planet-img">
+            <div class="planet-info">
+                <h3>Matahari</h3>
+                <p>Pusat tata surya kita. Matahari itu sebenarnya adalah bintang raksasa yang sangat panas! Gravitasinya yang kuat menahan semua planet agar tetap berputar mengelilinginya.</p>
+            </div>
+        </div>
+
+        <div class="planet-grid">
+            <div class="planet-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Mercury_in_color_-_Prockter07_centered.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original" alt="Merkurius" class="planet-img">
+                <div class="planet-info">
+                    <h3>1. Merkurius</h3>
+                    <p>Planet terkecil dan letaknya paling dekat dengan Matahari. Karena sangat dekat, suhu di siang hari sangat panas, tapi di malam hari bisa sangat dingin es.</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://png.pngtree.com/png-vector/20240718/ourmid/pngtree-beautiful-venus-planet-on-transparent-png-image_13144099.png" alt="Venus" class="planet-img">
+                <div class="planet-info">
+                    <h3>2. Venus</h3>
+                    <p>Planet paling panas di tata surya kita dan bersinar paling terang di langit malam. Ukurannya hampir sama dengan Bumi lho!</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://marketplace.canva.com/KvkBU/MAE1qYKvkBU/1/tl/canva-bumi-MAE1qYKvkBU.png" alt="Bumi" class="planet-img">
+                <div class="planet-info">
+                    <h3>3. Bumi</h3>
+                    <p>Rumah kita! Satu-satunya planet yang diketahui memiliki kehidupan, air cair, dan oksigen yang cukup untuk bernapas.</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaPNjoVmVnVXHL7dKaNwOn_Yx9wbMxuMmOUCyPGsRjSVjnfV0J26niq30&s=10" alt="Mars" class="planet-img">
+                <div class="planet-info">
+                    <h3>4. Mars</h3>
+                    <p>Sering disebut "Planet Merah" karena tanahnya mengandung karat besi. Banyak ilmuwan yang mengirim robot ke sana untuk diteliti.</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://png.pngtree.com/png-vector/20240923/ourmid/pngtree-jupiter-planet-image-on-white-background-png-image_13888640.png" alt="Jupiter" class="planet-img">
+                <div class="planet-info">
+                    <h3>5. Jupiter</h3>
+                    <p>Planet raksasa! Jupiter adalah planet terbesar di tata surya dan sebagian besar wujudnya berupa gas.</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original" alt="Saturnus" class="planet-img">
+                <div class="planet-info">
+                    <h3>6. Saturnus</h3>
+                    <p>Planet paling cantik karena memiliki cincin yang sangat lebar. Cincin ini sebenarnya terbuat dari bongkahan es dan batu.</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWFrtq0lWABS0FZ0pf3YWbIWT6xnNn5seNfCQfdRKyW2CjofaM6eEd8os&s=10" alt="Uranus" class="planet-img">
+                <div class="planet-info">
+                    <h3>7. Uranus</h3>
+                    <p>Planet es raksasa yang berputar dengan posisi miring. Warnanya biru pucat yang sangat indah.</p>
+                </div>
+            </div>
+
+            <div class="planet-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdamLxKo7TbZTlL6enZTs3d9r1yCwQXejoG2XzPIpwrUGj-eP622xkiVd&s=10" alt="Neptunus" class="planet-img">
+                <div class="planet-info">
+                    <h3>8. Neptunus</h3>
+                    <p>Planet terjauh dari Matahari. Neptunus sangat gelap, dingin, dan memiliki angin yang sangat kencang.</p>
+                </div>
+            </div>
+        </div>
+    
+
+        <h2 class="section-title">Benda Langit Lainnya</h2>
+        <div class="planet-grid">
+            
+            <div class="benda-langit">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=original" alt="Bulan" class="planet-img">
+                <div class="planet-info">
+                    <h3>Bulan (Satelit)</h3>
+                    <p>Bulan adalah satelit alami Bumi. Dia tidak bisa memancarkan cahaya sendiri, melainkan hanya memantulkan cahaya dari Matahari.</p>
+                </div>
+            </div>
+
+            <div class="benda-langit">
+                <img src="https://earthsky.org/upl/2020/01/asteroid-vesta-nasa-dawn-e1578224956943.jpg" alt="Asteroid" class="planet-img">
+                <div class="planet-info">
+                    <h3>Asteroid</h3>
+                    <p>Gumpalan batu besar yang melayang di luar angkasa. Paling banyak ditemukan berkumpul di antara orbit planet Mars dan Jupiter!</p>
+                </div>
+            </div>
+
+            <div class="benda-langit">
+                <img src="https://img.magnific.com/vektor-gratis/desain-komet-bintang-jatuh-cerah_1017-53386.jpg?semt=ais_hybrid&w=740&q=80" alt="Komet" class="planet-img">
+                <div class="planet-info">
+                    <h3>Komet</h3>
+                    <p>Sering disebut bintang berekor. Komet sebenarnya adalah gumpalan es, gas, dan debu yang ekornya menyala saat mendekati Matahari.</p>
+                </div>
+            </div>
+
+            <div class="benda-langit">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Bennu_mosaic_OSIRIS-REx_%28square%29.png/250px-Bennu_mosaic_OSIRIS-REx_%28square%29.png?utm_source=id.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Meteor" class="planet-img">
+                <div class="planet-info">
+                     <h3>Meteoroid</h3>
+                    <p>Batu luar angkasa berukuran kecil. Kalau jatuh dan terbakar masuk ke atmosfer Bumi, kita sering menyebutnya sebagai "bintang jatuh" atau Meteor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>By: Badrul Ain Salim</p>
+    </footer>
+
+</body>
+</html>
